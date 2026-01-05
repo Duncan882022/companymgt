@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/companymgt/static/css/main.04bf389a.css",
+    "main.js": "/companymgt/static/js/main.0b8c6076.js",
+    "index.html": "/companymgt/index.html",
+    "main.04bf389a.css.map": "/companymgt/static/css/main.04bf389a.css.map",
+    "main.0b8c6076.js.map": "/companymgt/static/js/main.0b8c6076.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04bf389a.css",
+    "static/js/main.0b8c6076.js"
+  ]
+}
