@@ -1,0 +1,130 @@
+[
+  {
+    "ID": 0,
+    "Code": "VIC",
+    "Name": "Nguyễn Văn Quang",
+    "ChucVu": "Tổng Giám đốc",
+    "CCCD": "200333"
+  },
+  {
+    "ID": 1111,
+    "Code": "VIC",
+    "Name": "Phạm Thiếu Hoa",
+    "ChucVu": "Giám đốc",
+    "CCCD": "222113"
+  },
+  {
+    "ID": 1,
+    "Code": "VHM",
+    "Name": "Nguyễn Thu Hằng",
+    "ChucVu": "Tổng Giám đốc",
+    "CCCD": "99887711"
+  },
+  {
+    "ID": 2,
+    "Code": "VHM",
+    "Name": "Tạ Thị Thanh Huyền",
+    "ChucVu": "Phó Tổng Giám đốc Thường trực",
+    "CCCD": "99887712"
+  },
+  {
+    "ID": 3,
+    "Code": "VHM",
+    "Name": "Nguyễn Văn A",
+    "ChucVu": "Phó Tổng Giám đốc",
+    "CCCD": "2233"
+  },
+  {
+    "ID": 4,
+    "Code": "VHM",
+    "Name": "Nguyễn Văn B",
+    "ChucVu": "Giám đốc Tài chính",
+    "CCCD": "3344"
+  },
+  {
+    "ID": 5,
+    "Code": "VHM",
+    "Name": "Nguyễ Văn Công",
+    "ChucVu": "Kế toán trưởng",
+    "CCCD": "112233"
+  },
+  {
+    "ID": 6,
+    "Code": "VHM",
+    "Name": "Nguyễn Văn Sơn",
+    "ChucVu": "Giám đốc Kinh doanh",
+    "CCCD": "99887766"
+  },
+  {
+    "ID": 7,
+    "Code": "VHM",
+    "Name": "Nguyễn Thị Vân",
+    "ChucVu": "Giám đốc Pháp chế",
+    "CCCD": "2244"
+  },
+  {
+    "ID": 8,
+    "Code": "TPX",
+    "Name": "Trần Văn Xanh",
+    "ChucVu": "Giám đốc",
+    "CCCD": "332211"
+  },
+  {
+    "ID": 9,
+    "Code": "CG",
+    "Name": "Nguyễn Cần Giờ",
+    "ChucVu": "Giám đốc",
+    "CCCD": "2211"
+  },
+  {
+    "ID": 10,
+    "Code": "HG",
+    "Name": "Phạm Hoàng Gia",
+    "ChucVu": "Giám đốc",
+    "CCCD": "99887766"
+  },
+  {
+    "ID": 11,
+    "Code": "NND",
+    "Name": "Hoàng Văn Ngưng",
+    "ChucVu": "Giám đốc",
+    "CCCD": "2223"
+  },
+  {
+    "ID": 12,
+    "Code": "SN",
+    "Name": "Ngô Sát Nhập",
+    "ChucVu": "Giám đốc",
+    "CCCD": "1113"
+  },
+  {
+    "ID": 13,
+    "Code": "GT",
+    "Name": "Dương Thị Giải Thể",
+    "ChucVu": "Giám đốc",
+    "CCCD": "2221"
+  },
+  {
+    "ID": 14,
+    "Code": "DGT",
+    "Name": "Dương Thị Đang Giải Thể",
+    "ChucVu": "Giám đốc",
+    "CCCD": "3334"
+  }
+  ,
+  {
+    "ID": 15,
+    "Code": "ST",
+    "Name": "Ngô Sinh Thái",
+    "ChucVu": "Giám đốc",
+    "CCCD": "32324"
+  }
+  ,
+  {
+    "ID": 16,
+    "Code": "TTK",
+    "Name": "Tạ Thị Thanh Huyền",
+    "ChucVu": "Giám đốc",
+    "CCCD": "99887712"
+  }
+]
