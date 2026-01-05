@@ -1,0 +1,246 @@
+[
+  {
+    "ID": 1,
+    "Code": "VHM",
+    "Lan": 0,
+    "ThoiGian": "2008-03-06",
+    "ThoiGianDisplay": "6/3/08",
+    "ChiTiet": "ĐKKD lần đầu ( mã số DN :103022741)",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 2,
+    "Code": "VHM",
+    "Lan": 1,
+    "ThoiGian": "2008-10-06",
+    "ThoiGianDisplay": "6/10/08",
+    "ChiTiet": "Đăng ký lần 1: Bổ sung ngành nghề kinh doanh (Kinh doanh bất động sản và Dịch vụ đấu giá, quảng cáo quản lý bất động sản, tư vấn về bất động sản (không bao gồm hoạt động tư vấn giá đất)",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 3,
+    "Code": "VHM",
+    "Lan": 2,
+    "ThoiGian": "2009-03-02",
+    "ThoiGianDisplay": "2/3/09",
+    "ChiTiet": "Đăng ký lần 2: Thay đổi tên Công ty, cổ đông và bầu bổ sung cổ đông sáng lập mới, thay đổi tên Công ty, miễn nhiệm và bầu bổ sung thành viên HDQT, Thay đổi người đại diện theo pháp luật",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 4,
+    "Code": "VHM",
+    "Lan": 3,
+    "ThoiGian": "2009-04-29",
+    "ThoiGianDisplay": "29/4/09",
+    "ChiTiet": "Đăng ký lần 3: Thay đổi tên Cổ đông sáng lập do thay đổi tên",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 5,
+    "Code": "VHM",
+    "Lan": 4,
+    "ThoiGian": "2009-06-26",
+    "ThoiGianDisplay": "6/26/09",
+    "ChiTiet": "Đăng ký lần 4: Tăng vốn điều lệ lên 500.000.000.000 đ (Phát hành thêm 20.000.000 CP để chào bán)",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 6,
+    "Code": "VHM",
+    "Lan": 5,
+    "ThoiGian": "2009-09-29",
+    "ThoiGianDisplay": "29/9/2009",
+    "ChiTiet": "Đăng ký lần 5:  Thay đổi cổ đông sáng lập do chuyển nhượng cổ phần và thay đổi thông tin của cổ đông sáng lập. Miễn nhiệm thành viên HĐQT",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 7,
+    "Code": "VHM",
+    "Lan": 6,
+    "ThoiGian": "2009-10-29",
+    "ThoiGianDisplay": "29/10/09",
+    "ChiTiet": "Đăng ký lần 6:Thay đổi địa chỉ Công ty. Miễn nhiệm và bầu bổ sung thành viên HĐQT",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 8,
+    "Code": "VHM",
+    "Lan": 7,
+    "ThoiGian": "2010-01-12",
+    "ThoiGianDisplay": "12/1/10",
+    "ChiTiet": "Đăng ký lần 7: Thay đổi người đại diện theo pháp luật của Công ty. Miễn nhiệm và bầu bổ sung thành viên HĐQT. Bổ sung ngành nghề kinh doanh",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 9,
+    "Code": "VHM",
+    "Lan": 8,
+    "ThoiGian": "2010-08-05",
+    "ThoiGianDisplay": "5/8/10",
+    "ChiTiet": "Đăng ký lần 8: Thay đổi thông tin của cổ đông sáng lập, tăng vốn điều lệ lên 2.000.000.000.000 . Thay đổi mã số doanh nghiệp ( 102671977)",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 10,
+    "Code": "VHM",
+    "Lan": 9,
+    "ThoiGian": "2011-01-25",
+    "ThoiGianDisplay": "25/1/11",
+    "ChiTiet": "Đăng ký lần 9: Thay đổi cổ đông sáng lập do chuyển nhượng cổ phần. Bầu BKS của Công ty",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 11,
+    "Code": "VHM",
+    "Lan": 10,
+    "ThoiGian": "2011-07-25",
+    "ThoiGianDisplay": "25/7/2011",
+    "ChiTiet": "Đăng ký lần 10: Thay đổi tỷ lệ góp vốn của cổ đông sáng lập do chuyển nhượng cổ phần: Vincom nhận chuyển nhượng 2.100.000 cổ phần từ Công ty cổ phần bất động sản Việt Nam và miễn nhiệm thành viên HĐQT Lê Thanh Liêm",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 12,
+    "Code": "VHM",
+    "Lan": 11,
+    "ThoiGian": "2011-09-29",
+    "ThoiGianDisplay": "29/9/11",
+    "ChiTiet": "Đăng ký lần 11: Bổ sung ngành nghề kinh doanh: Đại lý bán buôn vacxin, sinh phẩm y tế; Nhà thuốc; Dịch vụ hỗ trợ tổng hợp; Vệ sinh nhà cửa và các công trình khác; Dịch vụ chăm sóc và duy trì cảnh quan. Rút ngành nghề kinh doanh:  Dịch vụ đấu giá",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 13,
+    "Code": "VHM",
+    "Lan": 12,
+    "ThoiGian": "2011-10-14",
+    "ThoiGianDisplay": "14/10/11",
+    "ChiTiet": "Đăng ký lần 12:Sinh Thái chuyển nhượng hết cp cho các cá nhân & bổ sung ngành nghề kinh doanh)",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 14,
+    "Code": "VHM",
+    "Lan": 13,
+    "ThoiGian": "2011-12-26",
+    "ThoiGianDisplay": "26/12/11",
+    "ChiTiet": "Đăng ký lần 13:bổ sung thông tin chi nhánh Công ty)",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 15,
+    "Code": "VHM",
+    "Lan": 14,
+    "ThoiGian": "2012-01-30",
+    "ThoiGianDisplay": "30/1/12",
+    "ChiTiet": "Đăng ký lần 14:lập địa điểm kinh doanh Công ty tại Vincom Village)",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 16,
+    "Code": "VHM",
+    "Lan": 15,
+    "ThoiGian": "2012-06-21",
+    "ThoiGianDisplay": "21/6/12",
+    "ChiTiet": "Đăng ký lần 15:bổ sung ngành, nghề KD, thay đổi thông tin CĐLSL, thay đổi địa chỉ địa điểm kinh doanh số 1",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 17,
+    "Code": "VHM",
+    "Lan": 16,
+    "ThoiGian": "2013-01-17",
+    "ThoiGianDisplay": "17/1/13",
+    "ChiTiet": "Thay đổi địa chỉ trụ sở chính",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 18,
+    "Code": "VHM",
+    "Lan": 17,
+    "ThoiGian": "2013-05-13",
+    "ThoiGianDisplay": "13/5/13",
+    "ChiTiet": "Bổ sung ngành, nghề KD: Bán buôn nhiên liệu rắn, lỏng, khí và các sản phẩm liên quan và Kho bãi và lưu giữ hàng hóa.",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 19,
+    "Code": "VHM",
+    "Lan": 18,
+    "ThoiGian": "2018-02-01",
+    "ThoiGianDisplay": "1/2/18",
+    "ChiTiet": "Nhận sáp nhập Công ty Cổ phần Đầu tư Xây dựng Tân Liên Phát và Công ty Cổ phần Kinh doanh và Quản lý Bất động sản Vinhomes",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 20,
+    "Code": "VHM",
+    "Lan": 19,
+    "ThoiGian": "2018-02-02",
+    "ThoiGianDisplay": "2/2/18",
+    "ChiTiet": "Thay đổi tên công ty thành Công ty Cổ phần Vinhomes",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 21,
+    "Code": "VHM",
+    "Lan": 20,
+    "ThoiGian": "2018-02-12",
+    "ThoiGianDisplay": "12/2/18",
+    "ChiTiet": "Giảm vốn điều lệ do tách công ty (công ty TNHH Kinh doanh và PT Đô thị Nam Hà Nội)",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 22,
+    "Code": "VHM",
+    "Lan": 21,
+    "ThoiGian": "2018-02-23",
+    "ThoiGianDisplay": "23/2/18",
+    "ChiTiet": "Thay đổi người đại diện theo PL sang chị Nguyễn Diệu Linh - Chức danh Tổng giám đốc",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 23,
+    "Code": "VHM",
+    "Lan": 22,
+    "ThoiGian": "2018-04-12",
+    "ThoiGianDisplay": "12/4/18",
+    "ChiTiet": "Nhận sáp nhập công ty TNHH Phát triển Thể thao và Giải trí Mễ trì",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 24,
+    "Code": "VHM",
+    "Lan": 23,
+    "ThoiGian": "2018-12-06",
+    "ThoiGianDisplay": "6/12/18",
+    "ChiTiet": "Bổ sung người đại diện theo pháp luật gồm  1. Ông Phạm Nhật Vượng: Chủ tịch HĐQT 2. Bà Nguyễn Diệu Linh: Tổng Giám đốc 3. Ông Nguyễn Văn Trai: Phó TGĐ phụ trách ANAT và PCCN",
+    "Loai": "Công ty"
+  },
+  {
+    "ID": 25,
+    "Code": "VHM",
+    "Lan": 0,
+    "ThoiGian": "2011-12-07",
+    "ThoiGianDisplay": "7/12/11",
+    "ChiTiet": "đăng ký hoạt động chi nhánh số 0102671977-001 cấp lần đầu",
+    "Loai": "Chi Nhánh/VPĐD"
+  },
+  {
+    "ID": 26,
+    "Code": "VHM",
+    "Lan": 1,
+    "ThoiGian": "2011-12-26",
+    "ThoiGianDisplay": "26/12/11",
+    "ChiTiet": "bổ sung ngành nghề kinh doanh bất động sản",
+    "Loai": "Chi Nhánh/VPĐD"
+  },
+  {
+    "ID": 27,
+    "Code": "VHM",
+    "Lan": 2,
+    "ThoiGian": "2013-10-11",
+    "ThoiGianDisplay": "11/10/13",
+    "ChiTiet": "lập địa điểm kinh doanh  tại 72A Nguyễn Trãi",
+    "Loai": "Chi Nhánh/VPĐD"
+  }
+]
+
