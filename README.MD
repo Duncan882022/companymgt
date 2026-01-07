@@ -1,5 +1,5 @@
 Tạo cho tôi 1 hệ thống bằng react với những tính năng sau đây.
-- listing tất cả các công ty trong danh sách ở vinownership.json với tác thuộc tính name với linkable.
+- listing tất cả các công ty trong danh sách ở comownership.json với tác thuộc tính name với linkable.
 - khi người dùng click vào tên của 1 công ty, hệ thống show:
 + Tab 1 - danh sách các công ty con của công ty đã chọn với cột Name - Loại Sở Hữu (Mặc định là Trực Tiếp). 
 + Tab 2 - danh sách các cổ đông của công ty đó link từ file shareholders.json thông qua CompanyName với các cột (PersonaOrg, Ownership, From, To, Active (if to date is > To InActive, else Active)).
