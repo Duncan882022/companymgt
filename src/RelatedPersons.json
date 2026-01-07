@@ -1,0 +1,407 @@
+[
+  {
+    "ID": 1,
+    "Code": "VIC",
+    "PersonName": "Nguyễn Văn Quang",
+    "PersonCCCD": "200333",
+    "RelatedPersonName": "Lê Thị Mai Anh",
+    "RelatedPersonCCCD": "200334",
+    "Relationship": "Vợ"
+  },
+  {
+    "ID": 2,
+    "Code": "VIC",
+    "PersonName": "Nguyễn Văn Quang",
+    "PersonCCCD": "200333",
+    "RelatedPersonName": "Nguyễn Văn Đức",
+    "RelatedPersonCCCD": "200335",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 3,
+    "Code": "VIC",
+    "PersonName": "Nguyễn Văn Quang",
+    "PersonCCCD": "200333",
+    "RelatedPersonName": "Nguyễn Thị Lan",
+    "RelatedPersonCCCD": "200336",
+    "Relationship": "Con"
+  },
+  {
+    "ID": 4,
+    "Code": "VIC",
+    "PersonName": "Nguyễn Văn Quang",
+    "PersonCCCD": "200333",
+    "RelatedPersonName": "Nguyễn Văn Minh",
+    "RelatedPersonCCCD": "200337",
+    "Relationship": "Anh"
+  },
+  {
+    "ID": 5,
+    "Code": "VIC",
+    "PersonName": "Phạm Thiếu Hoa",
+    "PersonCCCD": "222113",
+    "RelatedPersonName": "Trần Văn Hùng",
+    "RelatedPersonCCCD": "222114",
+    "Relationship": "Chồng"
+  },
+  {
+    "ID": 6,
+    "Code": "VIC",
+    "PersonName": "Phạm Thiếu Hoa",
+    "PersonCCCD": "222113",
+    "RelatedPersonName": "Phạm Văn Long",
+    "RelatedPersonCCCD": "222115",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 7,
+    "Code": "VIC",
+    "PersonName": "Phạm Thiếu Hoa",
+    "PersonCCCD": "222113",
+    "RelatedPersonName": "Phạm Thị Hương",
+    "RelatedPersonCCCD": "222116",
+    "Relationship": "Con"
+  },
+  {
+    "ID": 8,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Thu Hằng",
+    "PersonCCCD": "99887711",
+    "RelatedPersonName": "Đỗ Văn Tuấn",
+    "RelatedPersonCCCD": "99887713",
+    "Relationship": "Chồng"
+  },
+  {
+    "ID": 9,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Thu Hằng",
+    "PersonCCCD": "99887711",
+    "RelatedPersonName": "Nguyễn Văn Bình",
+    "RelatedPersonCCCD": "99887714",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 10,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Thu Hằng",
+    "PersonCCCD": "99887711",
+    "RelatedPersonName": "Nguyễn Thị Linh",
+    "RelatedPersonCCCD": "99887715",
+    "Relationship": "Con"
+  },
+  {
+    "ID": 11,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Thu Hằng",
+    "PersonCCCD": "99887711",
+    "RelatedPersonName": "Nguyễn Văn Dũng",
+    "RelatedPersonCCCD": "99887716",
+    "Relationship": "Em"
+  },
+  {
+    "ID": 12,
+    "Code": "VHM",
+    "PersonName": "Tạ Thị Thanh Huyền",
+    "PersonCCCD": "99887712",
+    "RelatedPersonName": "Vũ Văn Khánh",
+    "RelatedPersonCCCD": "99887717",
+    "Relationship": "Chồng"
+  },
+  {
+    "ID": 13,
+    "Code": "VHM",
+    "PersonName": "Tạ Thị Thanh Huyền",
+    "PersonCCCD": "99887712",
+    "RelatedPersonName": "Tạ Văn Sơn",
+    "RelatedPersonCCCD": "99887718",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 14,
+    "Code": "VHM",
+    "PersonName": "Tạ Thị Thanh Huyền",
+    "PersonCCCD": "99887712",
+    "RelatedPersonName": "Tạ Thị Hoa",
+    "RelatedPersonCCCD": "99887719",
+    "Relationship": "Con"
+  },
+  {
+    "ID": 15,
+    "Code": "VHM",
+    "PersonName": "Tạ Thị Thanh Huyền",
+    "PersonCCCD": "99887712",
+    "RelatedPersonName": "Tạ Văn Nam",
+    "RelatedPersonCCCD": "99887720",
+    "Relationship": "Em"
+  },
+  {
+    "ID": 16,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Hồng Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Hoàng Thị Bích",
+    "RelatedPersonCCCD": "99887767",
+    "Relationship": "Vợ"
+  },
+  {
+    "ID": 17,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Hồng Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Nguyễn Văn Cường",
+    "RelatedPersonCCCD": "99887768",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 18,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Hồng Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Nguyễn Thị Phương",
+    "RelatedPersonCCCD": "99887769",
+    "Relationship": "Con"
+  },
+  {
+    "ID": 19,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Hồng Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Nguyễn Hồng Hải",
+    "RelatedPersonCCCD": "99887770",
+    "Relationship": "Anh"
+  },
+  {
+    "ID": 20,
+    "Code": "TTK",
+    "PersonName": "Tạ Thị Thanh Huyền",
+    "PersonCCCD": "99887711",
+    "RelatedPersonName": "Bùi Văn Thành",
+    "RelatedPersonCCCD": "99887721",
+    "Relationship": "Chồng"
+  },
+  {
+    "ID": 21,
+    "Code": "TTK",
+    "PersonName": "Tạ Thị Thanh Huyền",
+    "PersonCCCD": "99887711",
+    "RelatedPersonName": "Tạ Văn Đông",
+    "RelatedPersonCCCD": "99887722",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 22,
+    "Code": "TTK",
+    "PersonName": "Tạ Thị Thanh Huyền",
+    "PersonCCCD": "99887711",
+    "RelatedPersonName": "Tạ Thị Nga",
+    "RelatedPersonCCCD": "99887723",
+    "Relationship": "Con"
+  },
+  {
+    "ID": 23,
+    "Code": "TPX",
+    "PersonName": "Trần Văn Xanh",
+    "PersonCCCD": "332211",
+    "RelatedPersonName": "Lý Thị Hoa",
+    "RelatedPersonCCCD": "332212",
+    "Relationship": "Vợ"
+  },
+  {
+    "ID": 24,
+    "Code": "TPX",
+    "PersonName": "Trần Văn Xanh",
+    "PersonCCCD": "332211",
+    "RelatedPersonName": "Trần Văn Tùng",
+    "RelatedPersonCCCD": "332213",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 25,
+    "Code": "TPX",
+    "PersonName": "Trần Văn Xanh",
+    "PersonCCCD": "332211",
+    "RelatedPersonName": "Trần Thị Mai",
+    "RelatedPersonCCCD": "332214",
+    "Relationship": "Con"
+  },
+  {
+    "ID": 26,
+    "Code": "TPX",
+    "PersonName": "Trần Văn Xanh",
+    "PersonCCCD": "332211",
+    "RelatedPersonName": "Trần Văn Hải",
+    "RelatedPersonCCCD": "332215",
+    "Relationship": "Em"
+  },
+  {
+    "ID": 27,
+    "Code": "VHM",
+    "PersonName": "Hoàng Văn Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Phạm Thị Lan",
+    "RelatedPersonCCCD": "99887771",
+    "Relationship": "Vợ"
+  },
+  {
+    "ID": 28,
+    "Code": "VHM",
+    "PersonName": "Hoàng Văn Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Hoàng Văn Đức",
+    "RelatedPersonCCCD": "99887772",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 29,
+    "Code": "VHM",
+    "PersonName": "Hoàng Văn Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Hoàng Thị Hương",
+    "RelatedPersonCCCD": "99887773",
+    "Relationship": "Con"
+  },
+  {
+    "ID": 30,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Thị Vân",
+    "PersonCCCD": "2244",
+    "RelatedPersonName": "Lê Văn Hưng",
+    "RelatedPersonCCCD": "2245",
+    "Relationship": "Chồng"
+  },
+  {
+    "ID": 31,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Thị Vân",
+    "PersonCCCD": "2244",
+    "RelatedPersonName": "Nguyễn Văn Tài",
+    "RelatedPersonCCCD": "2246",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 32,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Thị Vân",
+    "PersonCCCD": "2244",
+    "RelatedPersonName": "Nguyễn Văn An",
+    "RelatedPersonCCCD": "2247",
+    "Relationship": "Con"
+  },
+  {
+    "ID": 33,
+    "Code": "VHM",
+    "PersonName": "Nguyễn Thị Vân",
+    "PersonCCCD": "2244",
+    "RelatedPersonName": "Nguyễn Thị Hoa",
+    "RelatedPersonCCCD": "2248",
+    "Relationship": "Chị"
+  },
+  {
+    "ID": 34,
+    "Code": "HG",
+    "PersonName": "Phạm Hoàng Gia",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Đinh Thị Nga",
+    "RelatedPersonCCCD": "99887774",
+    "Relationship": "Vợ"
+  },
+  {
+    "ID": 35,
+    "Code": "HG",
+    "PersonName": "Phạm Hoàng Gia",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Phạm Văn Hùng",
+    "RelatedPersonCCCD": "99887775",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 36,
+    "Code": "HG",
+    "PersonName": "Phạm Hoàng Gia",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Phạm Thị Mai",
+    "RelatedPersonCCCD": "99887776",
+    "Relationship": "Con"
+  },
+  {
+    "ID": 37,
+    "Code": "HG",
+    "PersonName": "Phạm Hoàng Gia",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Phạm Hoàng Nam",
+    "RelatedPersonCCCD": "99887777",
+    "Relationship": "Anh"
+  },
+  {
+    "ID": 38,
+    "Code": "TTK",
+    "PersonName": "Nguyễn Hồng Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Hoàng Thị Bích",
+    "RelatedPersonCCCD": "99887767",
+    "Relationship": "Vợ"
+  },
+  {
+    "ID": 39,
+    "Code": "TTK",
+    "PersonName": "Nguyễn Hồng Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Nguyễn Văn Cường",
+    "RelatedPersonCCCD": "99887768",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 40,
+    "Code": "CG",
+    "PersonName": "Nguyễn Hồng Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Hoàng Thị Bích",
+    "RelatedPersonCCCD": "99887767",
+    "Relationship": "Vợ"
+  },
+  {
+    "ID": 41,
+    "Code": "HG",
+    "PersonName": "Nguyễn Hồng Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Hoàng Thị Bích",
+    "RelatedPersonCCCD": "99887767",
+    "Relationship": "Vợ"
+  },
+  {
+    "ID": 42,
+    "Code": "ST",
+    "PersonName": "Nguyễn Hồng Sơn",
+    "PersonCCCD": "99887766",
+    "RelatedPersonName": "Hoàng Thị Bích",
+    "RelatedPersonCCCD": "99887767",
+    "Relationship": "Vợ"
+  },
+  {
+    "ID": 43,
+    "Code": "ST",
+    "PersonName": "Nguyễn Thu Hằng",
+    "PersonCCCD": "99887711",
+    "RelatedPersonName": "Đỗ Văn Tuấn",
+    "RelatedPersonCCCD": "99887713",
+    "Relationship": "Chồng"
+  },
+  {
+    "ID": 44,
+    "Code": "ST",
+    "PersonName": "Nguyễn Thu Hằng",
+    "PersonCCCD": "99887711",
+    "RelatedPersonName": "Nguyễn Văn Bình",
+    "RelatedPersonCCCD": "99887714",
+    "Relationship": "Cha"
+  },
+  {
+    "ID": 45,
+    "Code": "TTK",
+    "PersonName": "Tạ Thị Thanh Huyền",
+    "PersonCCCD": "99887712",
+    "RelatedPersonName": "Vũ Văn Khánh",
+    "RelatedPersonCCCD": "99887717",
+    "Relationship": "Chồng"
+  }
+]

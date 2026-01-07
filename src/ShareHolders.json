@@ -5,7 +5,7 @@
     "PersonaOrg": "Nguyễn Hồng Sơn",
     "MSTCCCDHC": "99887766",
     "LoaiCD": "Cá nhân",
-    "Ownership": 5,
+    "Ownership": 15,
     "From": "2021-03-01",
     "To": "2027-03-01",
     "TrangThai": "Active"
@@ -16,7 +16,7 @@
     "PersonaOrg": "Nguyễn Hồng Hà",
     "MSTCCCDHC": "99887768",
     "LoaiCD": "Cá nhân",
-    "Ownership": 0.5,
+    "Ownership": 10.5,
     "From": "2021-03-01",
     "To": "2027-03-01",
     "TrangThai": "Active"
@@ -24,8 +24,8 @@
   {
     "ID": 3,
     "Code": "VHM",
-    "PersonaOrg": "Công ty ABC",
-    "MSTCCCDHC": "9988774444",
+    "PersonaOrg": "Công ty TNHH GT",
+    "MSTCCCDHC": "112241",
     "LoaiCD": "Tổ chức",
     "Ownership": 12.3,
     "From": "2021-03-01",
@@ -38,7 +38,7 @@
     "PersonaOrg": "Vingroup JSC",
     "MSTCCCDHC": "998877662",
     "LoaiCD": "Tổ chức",
-    "Ownership": 82.2,
+    "Ownership": 62.2,
     "From": "2021-03-01",
     "To": "2027-03-01",
     "TrangThai": "Active"

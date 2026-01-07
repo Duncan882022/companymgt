@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import './App.css';
 import companiesData from './Company.json';
 import shareholdersData from './ShareHolders.json';
+import companyMembersData from './CompanyMembers.json';
 import CompanyDetail from './components/CompanyDetail';
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
     { id: 'trangThai', label: 'Trạng thái', type: 'select' },
     { id: 'nganhNghe', label: 'Ngành nghề kinh doanh', type: 'text', placeholder: 'Tìm theo ngành nghề...' },
     { id: 'congTyMe', label: 'Công ty mẹ', type: 'text', placeholder: 'Tìm theo công ty mẹ...' },
-    { id: 'congTyCon', label: 'Công ty con', type: 'text', placeholder: 'Tìm theo công ty con...' }
+    { id: 'congTyCon', label: 'Công ty con', type: 'text', placeholder: 'Tìm theo công ty con...' },
+    { id: 'congTyConGianTiep', label: 'Công ty con gián tiếp', type: 'text', placeholder: 'Tìm theo công ty con gián tiếp...' },
+    { id: 'benLienQuan', label: 'Bên liên quan', type: 'text', placeholder: 'Tìm theo tên cá nhân/tổ chức...' }
   ];
 
   // Active criteria (criteria that are currently displayed)
@@ -66,7 +69,9 @@ function App() {
     trangThai: '',
     nganhNghe: '',
     congTyMe: '',
-    congTyCon: ''
+    congTyCon: '',
+    congTyConGianTiep: '',
+    benLienQuan: ''
   });
 
   // Helper: Get ownership rate from ShareHolders data (using Code for lookup)
@@ -319,6 +324,114 @@ function App() {
     return result;
   };
 
+  // Helper: Get only indirect subsidiaries (not direct children)
+  // A subsidiary is indirect if it's reached through a path with length > 2 (at least one intermediate company)
+  const getIndirectSubsidiaries = (companyId) => {
+    if (!companyId) return [];
+    
+    const company = companiesData.find(c => c.ID === companyId);
+    if (!company) return [];
+    
+    const indirectSubsidiaries = new Map(); // Map<companyId, { company, totalOwnership }>
+    const queue = [];
+    const visited = new Set();
+    
+    // Helper: Find companies owned by a parent company
+    const getOwnedCompanies = (parent) => {
+      const ownedCompanies = [];
+      
+      // Method 1: Find by ParentID (direct children)
+      const directChildren = companiesData.filter(c => 
+        c && c.ParentID === parent.ID && c.ParentID !== 0 && c.TrangThai === 'Đang hoạt động'
+      );
+      directChildren.forEach(child => {
+        const ownership = getOwnershipRate(parent.ID, child.ID);
+        if (ownership > 0) {
+          ownedCompanies.push({ company: child, ownership });
+        }
+      });
+      
+      // Method 2: Find by ShareHolders lookup
+      const shareholders = shareholdersData.filter(sh => 
+        sh && (sh.PersonaOrg === parent.Name || sh.PersonaOrg === parent.Code)
+      );
+      
+      shareholders.forEach(sh => {
+        const ownedCompany = companiesData.find(c => 
+          c && c.Code === sh.Code && c.TrangThai === 'Đang hoạt động'
+        );
+        if (ownedCompany && ownedCompany.ID !== parent.ID) {
+          const alreadyAdded = ownedCompanies.some(oc => oc.company.ID === ownedCompany.ID);
+          if (!alreadyAdded && sh.Ownership > 0) {
+            ownedCompanies.push({ company: ownedCompany, ownership: sh.Ownership });
+          }
+        }
+      });
+      
+      return ownedCompanies;
+    };
+    
+    // Start with direct children (these are NOT indirect)
+    const directOwned = getOwnedCompanies(company);
+    const directChildIds = new Set(directOwned.map(({ company: child }) => child.ID));
+    
+    // Add direct children to queue to explore their children (indirect subsidiaries)
+    directOwned.forEach(({ company: child, ownership }) => {
+      if (ownership > 0) {
+        queue.push({ 
+          company: child, 
+          pathOwnership: ownership / 100,
+          pathIds: [company.ID, child.ID],
+          pathLength: 2
+        });
+      }
+    });
+    
+    // BFS to find all indirect subsidiaries (path length > 2)
+    while (queue.length > 0) {
+      const current = queue.shift();
+      const ownedCompanies = getOwnedCompanies(current.company);
+      
+      ownedCompanies.forEach(({ company: child, ownership }) => {
+        // Check for circular reference
+        if (current.pathIds && current.pathIds.includes(child.ID)) {
+          return;
+        }
+        
+        const childOwnershipRate = ownership / 100;
+        const newOwnership = current.pathOwnership * childOwnershipRate * 100;
+        const newPathLength = current.pathLength + 1;
+        
+        // Only consider as indirect if path length > 2 (at least one intermediate company)
+        if (newPathLength > 2) {
+          // Update total ownership (sum all paths)
+          if (indirectSubsidiaries.has(child.ID)) {
+            indirectSubsidiaries.get(child.ID).totalOwnership += newOwnership;
+          } else {
+            indirectSubsidiaries.set(child.ID, { company: child, totalOwnership: newOwnership });
+          }
+        }
+        
+        // Continue BFS if ownership is meaningful (>= 1%)
+        if (newOwnership >= 1) {
+          const newPathIds = current.pathIds ? [...current.pathIds, child.ID] : [current.company.ID, child.ID];
+          queue.push({ 
+            company: child, 
+            pathOwnership: current.pathOwnership * childOwnershipRate,
+            pathIds: newPathIds,
+            pathLength: newPathLength
+          });
+        }
+      });
+    }
+    
+    // Return all indirect subsidiaries (regardless of ownership percentage for search purposes)
+    // But filter out direct children
+    return Array.from(indirectSubsidiaries.values())
+      .map(item => item.company)
+      .filter(subsidiary => !directChildIds.has(subsidiary.ID));
+  };
+
   // Get unique companies (distinct by name) and sort alphabetically
   const uniqueCompanies = useMemo(() => {
     const companyMap = new Map();
@@ -358,6 +471,31 @@ function App() {
       // Filter to only show companies that are subsidiaries of matching parents
       companiesToFilter = uniqueCompanies.filter(company => 
         allSubsidiaryIds.has(company.ID)
+      );
+    }
+    
+    // If searching by "Công ty con gián tiếp", first find all companies matching the search term
+    // Then get all their indirect subsidiaries and show those companies
+    if (searchFilters.congTyConGianTiep) {
+      const searchTerm = searchFilters.congTyConGianTiep.toLowerCase();
+      // Find all companies matching the search term
+      const matchingCompanies = companiesData.filter(c => 
+        c && c.TrangThai === 'Đang hoạt động' && 
+        c.Name.toLowerCase().includes(searchTerm)
+      );
+      
+      // Get all indirect subsidiaries of matching companies
+      const allIndirectSubsidiaryIds = new Set();
+      matchingCompanies.forEach(matchingCompany => {
+        const indirectSubs = getIndirectSubsidiaries(matchingCompany.ID);
+        indirectSubs.forEach(subsidiary => {
+          allIndirectSubsidiaryIds.add(subsidiary.ID);
+        });
+      });
+      
+      // Show all companies that are indirect subsidiaries
+      companiesToFilter = uniqueCompanies.filter(company => 
+        allIndirectSubsidiaryIds.has(company.ID)
       );
     }
     
@@ -456,6 +594,50 @@ function App() {
           subsidiary.Name.toLowerCase().includes(searchFilters.congTyCon.toLowerCase())
         );
         if (!hasSubsidiary) {
+          return false;
+        }
+      }
+      
+      // Công ty con gián tiếp filter is handled above, skip here
+      
+      // Bên liên quan (tìm trong thành viên công ty, cổ đông, công ty mẹ, công ty con)
+      if (searchFilters.benLienQuan) {
+        const searchTerm = searchFilters.benLienQuan.toLowerCase();
+        let hasRelatedParty = false;
+        
+        // 1. Tìm trong thành viên công ty
+        const companyMembers = companyMembersData.filter(m => m.Code === company.Code);
+        if (companyMembers.some(member => member.Name.toLowerCase().includes(searchTerm))) {
+          hasRelatedParty = true;
+        }
+        
+        // 2. Tìm trong cổ đông (cá nhân và tổ chức)
+        const shareholders = shareholdersData.filter(sh => 
+          sh && sh.Code === company.Code && sh.Ownership >= 10
+        );
+        if (shareholders.some(sh => 
+          sh.PersonaOrg && sh.PersonaOrg.toLowerCase().includes(searchTerm)
+        )) {
+          hasRelatedParty = true;
+        }
+        
+        // 3. Tìm trong công ty mẹ
+        const parentCompanies = getAllParentCompanies(company.ID);
+        if (parentCompanies.some(parent => 
+          parent.Name.toLowerCase().includes(searchTerm)
+        )) {
+          hasRelatedParty = true;
+        }
+        
+        // 4. Tìm trong công ty con (trực tiếp và gián tiếp)
+        const allSubsidiaries = getAllSubsidiaries(company.ID);
+        if (allSubsidiaries.some(subsidiary => 
+          subsidiary.Name.toLowerCase().includes(searchTerm)
+        )) {
+          hasRelatedParty = true;
+        }
+        
+        if (!hasRelatedParty) {
           return false;
         }
       }

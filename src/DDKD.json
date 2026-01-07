@@ -178,6 +178,43 @@
     "ViTri": "TP.HCM",
     "Loai": "Địa điểm kinh doanh",
     "TinhTrang": "Đang hoạt động"
+  },
+  {
+    "ID": 16,
+    "Code": "VHM",
+    "DonViChuQuan": "Vinhomes",
+    "TenDDKD": "Chi nhánh Công ty TNHH Đầu tư và Phát triển",
+    "MaSoDangKy": "112023194",
+    "DiaChi": "Số 191 Phố Bà Triệu, Phường Lê Đại Hành, Quận Hai Bà Trung, Thành phố Hà Nội",
+    "NguoiDungDau": "Bà Lương Thị Lan Hương",
+    "ViTri": "Hà Nội",
+    "Loai": "Chi nhánh",
+    "TinhTrang": "Dừng hoạt động"
+  },
+  {
+    "ID": 17,
+    "Code": "VHM",
+    "DonViChuQuan": "Vinhomes",
+    "TenDDKD": "Chi nhánh tại Hồ Chí Minh",
+    "MaSoDangKy": "090222333-002",
+    "DiaChi": "Tầng 4 Vincom Megamall Thảo Điền, 161 Xa lộ Hà Nội, Phường Thảo điền, Thành phố thủ đức, Thành phố HCM",
+    "NguoiDungDau": "Ông Nguyễn Việt Quang",
+    "ViTri": "Hà Nội",
+    "Loai": "Chi nhánh",
+    "TinhTrang": "Đang hoạt động"
+  },
+  {
+    "ID": 18,
+    "Code": "VHM",
+    "DonViChuQuan": "Vinhomes",
+    "TenDDKD": "ĐỊA ĐIỂM KINH DOANH SỐ 01",
+    "MaSoDangKy": "2",
+    "DiaChi": "Phòng 12SH12B, Tầng 1, Tòa P12, Khu đô thị Vinhomes Times city, số 458, phố Minh Khai, Phường Vĩnh Tuy, Quận Hai Bà Trưng, Thành phố Hà Nội, Việt Nam",
+    "NguoiDungDau": "Ông Nguyễn Việt Quang",
+    "ViTri": "Hà Nội",
+    "Loai": "Địa điểm kinh doanh",
+    "TinhTrang": "Đang hoạt động"
   }
 ]
+
 
